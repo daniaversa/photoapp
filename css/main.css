@@ -1,12 +1,128 @@
-/* Main */
-* {
+/*
+Main colors: rgba(15, 22, 38, 1), rgba(255, 255, 255, 1), rgba(171, 152, 122, 1), rgba(255, 83, 61, 1), rgba(0, 0, 0, 1)
+
+Main fonts: text - "Roboto" (400, 400i, 500, 700)
+            title - "Oswald" (400)
+*/
+
+/* Base
+==================*/
+*, *::before, *::after {
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Helvetica", "Verdana", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  color: rgba(15, 22, 38, 1);
+  background: rgba(255, 255, 255, 1);
 }
-/* Layout*/
 
-/* Module */
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-/* State */
+h1 {
+  font-size: 4.5em;
+  margin: 10% 0 0.37em 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+
+/* Layout
+==================*/
+main {
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.nav-list {
+  margin: 0 auto;
+  padding-top: 2em;
+  flex-wrap: nowrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+  flex: 0 1 200px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.hero {
+  background-image: url("../img/family.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  width: 100%;
+  height: 100vh;
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-header {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+
+
+.social-media {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Module
+==================*/
+.header-txt {
+    text-transform: uppercase;
+}
+
+.social-item {
+  font-size: 3em;
+  padding: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+
+
+/* State
+==================*/
+a:hover {
+  color: rgba(255, 83, 61, 1);
+  text-decoration: underline;
+}

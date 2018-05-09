@@ -1,8 +1,11 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <title>Photoapp</title>
   </head>
@@ -10,76 +13,43 @@
   <!-- Front End implementation practice based on a free .psd file -->
 
   <body>
-    <!-- Hero -->
-    <main id="hero">
-      <!-- Navbar -->
-      <nav class="nav-main">
-        <ol class="nav-list">
-          <li>Home</li>
-          <li>About us</li>
-          <li>*LOGO*</li>
-          <li>Design</li>
-          <li>Download</li>
-        </ol>
-      </nav>
-      <!-- Main header-->
-      <header class="hero-header">
-        <h1 class="hero-heading">Your life, a photo</h1>
-        <p class="hero-under">print your life in a simple photo</p>
-        <button class="btn hero-btn">Get Started</button>
-      </header>
-      <!-- Social Media-->
-      <ol class="hero-social">
-        <li>Twitter</li>
-        <li>Facebook</li>
-        <li>Instagram</li>
-      </ol>
+    <main>
+      <!-- Hero -->
+      <div class="hero">
+        <!-- Navbar -->
+        <nav class="nav-main">
+          <ul class="nav-list row">
+            <li class="nav-item col"><a href="#">Home</a></li>
+            <li class="nav-item col"><a href="#">About us</a></li>
+            <li class="nav-item col"><a href="#"><img src="img/logo-w.svg" alt="A camera, our logo" width="100px" class="logo-md"></a></li>
+            <li class="nav-item col"><a href="#">Design</a></li>
+            <li class="nav-item col"><a href="#">Download</a></li>
+          </ul>
+        </nav>
+        <!-- Main header-->
+        <header class="main-header">
+          <h1>Your Life, a Photo</h1>
+          <p class="header-txt">print your life in a simple photo</p>
+          <a href="" class="btn">Get Started</a>
+        </header>
+
+        <!-- Social Media-->
+        <div class="social-media">
+          <ul class="social-list">
+            <li class="social-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li class="social-item"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+            <li class="social-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- About Us -->
+      <!-- Design -->
+      <!-- Community -->
+      <!-- Email Subscription -->
+      <!-- Download -->
+      <!-- Footer -->
+      <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </main>
-    <!-- About Us -->
-    <section id="about">
-      <h2 class="about-heading">Represent your life in a single photo</h2>
-      <p class="about-txt">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore ipsam veniam, dolorem exercitationem iusto mollitia cupiditate, inventore dolor quisquam voluptas, placeat maiores vero accusamus aperiam voluptate tempore blanditiis eveniet! Commodi mollitia libero ut, necessitatibus qui illum.
-      </p>
-      <button class="btn about-btn">Get Started</button>
-      *IMAGEM*
-    </section>
-    <!-- Design -->
-    <section id="design">
-      *IMAGEM*
-      <h2 class="design-heading">Design</h2>
-      <p class="design-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error unde nulla eveniet modi, quisquam quia minus nisi beatae eum voluptates quaerat, nemo atque commodi veniam praesentium recusandae iure facilis eligendi ut magni sequi. Facere, harum, natus.</p>
-      <button class="btn design-btn">Get Started</button>
-    </section>
-    <!-- Community -->
-    <section id="community">
-      <div class="community-left">
-        <img src="" alt="A camera, our logo" class="logo-sm">
-        <h2 class="community-heading">Our Community</h2>
-        <p class="community-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro voluptates mollitia, possimus aliquam.</p>
-      </div>
-      *CARROUSEL*
-    </section>
-    <!-- Email Subscription -->
-    <section id="email">
-      <h3 class="email-heading"></h3>
-      <form action="" class="email-form"><input type="text" class="email-input" placeholder="YOUR EMAIL"><button class="btn email-btn">*OK*</button></form>
-    </section>
-    <!-- Download -->
-    <section id="download">
-      <h2 class="download-heading">Download it</h2>
-      <p class="download-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusantium officiis aliquid. Dolore iste eligendi, magni pariatur dignissimos veritatis, suscipit praesentium assumenda nam, similique recusandae? Quod quos voluptatem repellendus, libero deserunt distinctio at sint, quaerat odio, a provident architecto nemo quis ratione nulla voluptas eius iste, repellat asperiores doloribus! Cumque.</p>
-      <button class="btn download-btn">Apple Store</button>
-      <button class="btn download-btn">Play Store</button>
-    </section>
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-left">
-        <nav class="footer-nav">Credits | Privacy | Our Teams</nav>
-        <p class="footer-txt">Code by Daniel Aversa | 2018</p>
-      </div>
-      <img src="" alt="" class="logo-sm">
-    </footer>
-    <script type="text/javascript" src="js/main.js"></script>
   </body>
+
 </html>
