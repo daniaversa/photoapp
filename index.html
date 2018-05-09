@@ -17,18 +17,21 @@
       <!-- Hero -->
       <div class="hero">
         <!-- Navbar -->
-        <nav class="nav-main">
-          <ul class="nav-list row">
-            <li class="nav-item col"><a href="#">Home</a></li>
-            <li class="nav-item col"><a href="#">About us</a></li>
-            <li class="nav-item col"><a href="#"><img src="img/logo-w.svg" alt="A camera, our logo" width="100px" class="logo-md"></a></li>
-            <li class="nav-item col"><a href="#">Design</a></li>
-            <li class="nav-item col"><a href="#">Download</a></li>
-          </ul>
+        <nav class="nav-main nav-list">
+          <a href="#" class="logo--secret"><img src="img/logo-w.svg" alt="A camera, our logo" width="70px" class="logo-md"></a>
+          <label for="toggle">&nbsp;&#9776;&nbsp;</label>
+          <input type="checkbox" id="toggle">
+          <div class="drop-nav">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">About us</a>
+            <a href="#" class="nav-item logo"><img src="img/logo-w.svg" alt="A camera, our logo" width="70px" class="logo-md"></a>
+            <a href="#" class="nav-item">Design</a>
+            <a href="#" class="nav-item"><span class="orange">Download</span></a>
+          </div>
         </nav>
         <!-- Main header-->
         <header class="main-header">
-          <h1>Your Life, a Photo</h1>
+          <h1>Your Life, <span class="no-break">a Photo</span></h1>
           <p class="header-txt">print your life in a simple photo</p>
           <a href="" class="btn">Get Started</a>
         </header>
@@ -50,6 +53,9 @@
       <!-- Footer -->
       <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </main>
+
+    <script src="js/main.js" type="text/javascript"></script>
+
   </body>
 
 </html>
