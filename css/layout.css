@@ -9,8 +9,22 @@
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .col {
+  flex: 0 0 100%;
+}
 
+.col .col--full {
+  flex: 0 0 100%;
+}
+
+
+/*
+ * Navigation bar
+ */
+
+.nav-accent {
+  color: orange;
 }
