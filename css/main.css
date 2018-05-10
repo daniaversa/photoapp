@@ -1,12 +1,12 @@
 /*
  *  1. Base
  */
-@import "./base.css";
+@import "base.css";
 /*
  *  2. Layout
  */
-@import "./layout.css";
+@import "layout.css";
 /*
  *  3. Module
  */
-@import "./module.css";
+@import "module.css";
