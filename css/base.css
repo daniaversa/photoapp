@@ -1,0 +1,62 @@
+/*
+ * Reset
+ * =============
+ * I like to make my own resets and tweak it a little based on each project.
+ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul,
+ol, li, dl, dt, dd, form, a, fieldset, input, th, td {
+  margin: 0; padding: 0; border: 0; outline: none;
+}
+
+body {
+  line-height: 1;          /* AJUSTAR O TAMANHO */
+  font-size: 88%;          /* AJUSTAR O TAMANHO */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  padding: .6em 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 .75em;
+}
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;            /* AJUSTAR */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * Type rules
+ */
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  line-height: 1.15;
+}
