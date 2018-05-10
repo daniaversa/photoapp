@@ -20,11 +20,100 @@
   flex: 0 0 100%;
 }
 
+/*
+ *  Hero
+ */
+
+.hero {
+  height: 100vh;
+  background-image: url(../img/family.jpg);
+  background-position: bottom center;
+  background-size: cover;
+  color: white;
+}
 
 /*
- * Navigation bar
+ *  Navigation bar
  */
 
 .nav-accent {
   color: orange;
+}
+
+.nav-list {
+  position: absolute;
+  height: 100vh;
+  background: rgba(38, 22, 38, 1);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.nav-list li {
+  border-bottom: 2px solid rgba(0, 0, 0, .5);
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburguer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 20px 0 0;
+  font-size: 2.5em;
+}
+
+.hamburguer p {
+  content: 'YES';
+}
+
+/*
+ *  Hero Header
+ */
+
+.hero-header {
+  display: block;
+  padding: 25vh 0 0;
+}
+
+.hero-header h1 {
+  font-size: 2.986em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px black;
+  font-weight: 400;
+}
+
+.hero-header p {
+  display: block;
+  font-size: 1.2em;
+  text-shadow: 1px 1px black;
+  padding: 0 30px;
+}
+
+.hero-header a {
+  margin-top: 20px;
+}
+
+/*
+ *  Hero Social Media
+ */
+
+.hero-social {
+  position: absolute;
+  right: 0;
+  bottom: 3vh;
+  font-size: 2rem;
+}
+
+.hero-social li {
+  padding: 0 0.8em 0.3em 0;
 }

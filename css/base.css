@@ -14,18 +14,19 @@ ol, li, dl, dt, dd, form, a, fieldset, input, th, td {
 }
 
 body {
-  line-height: 1;          /* AJUSTAR O TAMANHO */
-  font-size: 88%;          /* AJUSTAR O TAMANHO */
+  line-height: 1;
+  font-size: 16px;
   text-align: center;
+  font-family: 'Gothic A1', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+  font-size: 1.2em;
   padding: .6em 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0 0 .75em;
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.15;
 }
 
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child {
@@ -48,16 +49,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-/*
- * Type rules
- */
-
-body {
-  font-family: "Helvetica Neue", sans-serif;
-}
-
-h1 {
-  line-height: 1.15;
 }
