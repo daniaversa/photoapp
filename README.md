@@ -1,7 +1,6 @@
 ## photoapp ##
 
 ### Daniel Aversa ###
-2018
 
 dani.aversa@gmail.com
 
