@@ -131,3 +131,11 @@ h1, h2, h3, h4, h5, h6 {
 .cta h1, .cta h2 {
   color: black;
 }
+
+.footer-main {
+  background: #BBB;
+}
+
+.footer a {
+  color: rgba(0, 87, 68, 1);
+}
