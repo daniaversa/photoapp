@@ -1,4 +1,12 @@
 /*
+ *  Colors
+ *    Primary: rgba(32, 234, 189, 1)
+ *    Secondary: rgba(0, 87, 68, 1)
+ *    Accent: rgba(255, 172, 35, 1)
+ */
+
+
+/*
  * Reset
  * =============
  * I like to make my own resets and tweak it a little based on each project.
@@ -20,13 +28,14 @@ body {
   font-family: 'Gothic A1', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1.2rem;
-  padding: .6em 0;
+h1, h2, h3, h4, h5, h6, p {
+  padding: .6rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child {
@@ -43,10 +52,82 @@ img {
 }
 
 a {
-  color: inherit;            /* AJUSTAR */
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/*
+ *  Font sizes
+ */
+h1 {
+  font-size: 1.728rem;
+}
+
+h2{
+  font-size: 1.2rem;
+}
+
+/*
+ *  Colors
+ */
+html {
+  color: black;
+  background-color: white;
+}
+
+a {
+  color: rgba(32, 234, 189, 1);
+}
+
+a:hover {
+  color: rgba(255, 172, 35, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: rgba(0, 87, 68, 1);
+}
+
+.nav-accent {
+  color: rgba(255, 172, 35, 1);
+}
+
+.hero-header h1 {
+    color: white;
+}
+.feat {
+  background: rgba(0, 87, 68, 1);
+  color: white;
+}
+
+.feat h1, .feat h2 {
+  color: white;
+}
+
+.btn {
+  color: black;
+}
+
+.btn:hover {
+  color: black;
+  text-decoration: none;
+  background: rgba(255, 172, 35, 1);
+}
+
+.hero-social a {
+  color: white;
+}
+
+.subscribe h1 {
+  color: white;
+}
+
+.cta {
+  background: rgba(255, 172, 35, 1);
+}
+
+.cta h1, .cta h2 {
+  color: black;
 }

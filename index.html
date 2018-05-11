@@ -28,8 +28,8 @@
         <li><a href="#">About Photoapp</a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">Community</a></li>
-        <li><a href="#">News Subscription</a></li>
         <li><a href="#" class="nav-accent">Download App</a></li>
+        <li><a href="#">News Subscription</a></li>
       </ul>
       <div id="hamburguer">
         <p>&#8801;</p>
@@ -55,51 +55,81 @@
   </section>
 
   <!-- About -->
-  <main class="about flex">
+  <main class="about flex box">
     <article class="m-article col">
       <h1>About Photoapp</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eveniet cumque suscipit ea, incidunt vitae harum aut nesciunt est tempore dolore labore quasi voluptatum voluptate, error maxime officiis vero ab consequuntur ipsum non veritatis laudantium repudiandae.</p>
-      <a href="#" class="btn"></a>
+      <a href="#" class="btn">Get Started</a>
     </article>
-    <img src="" alt="" class="about-img col">
+    <div class="m-article-wrapper col">
+      <img src="img/phone.jpg" alt="Our app running." class="m-article-img">
+    </div>
   </main>
 
   <!-- Features -->
-  <section class="feat flex">
-    <h1 class="col--full">Features</h1>
+  <section class="feat">
+    <h1>Features</h1>
+    <div class="flex m-sales-container">
     <div class="m-sales-points col">
+      <i class="far fa-images feat-icon"></i>
       <h2>Feature 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nobis dolore officiis, fugiat, accusamus quos?</p>
-      <a href="#" class="btn btn-small"></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nobis dolore officiis, accusamus?</p>
+      <a href="#" class="btn btn-secondary">Read More</a>
     </div>
     <div class="m-sales-points col">
+      <i class="fas fa-camera feat-icon"></i>
       <h2>Feature 2</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima pariatur, doloribus voluptates.</p>
-      <a href="#" class="btn btn-small"></a>
+      <a href="#" class="btn btn-secondary">Try it</a>
     </div>
     <div class="m-sales-points col">
+      <i class="fas fa-mobile-alt feat-icon"></i>
       <h2>Feature 3</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem placeat vero, error ea quod animi.</p>
-      <a href="#" class="btn btn-small"></a>
+      <a href="#" class="btn btn-secondary">Read More</a>
+    </div>
+    </div>
+  </section>
+
+  <!-- Community -->
+  <main class="community flex box">
+    <article class="m-article col">
+      <h1>Our Community</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eveniet cumque suscipit ea, incidunt vitae harum aut nesciunt est tempore dolore labore quasi voluptatum voluptate, error maxime officiis vero ab consequuntur ipsum non veritatis laudantium repudiandae.</p>
+      <a href="#" class="btn">Read More</a>
+    </article>
+    <div class="m-article-wrapper col">
+      <img src="img/kids.jpg" alt="Our happy clients." class="m-article-img">
+    </div>
+  </main>
+
+  <!-- CTA - Download -->
+  <section class="cta">
+    <header class="cta-col">
+        <h1>Download Now!</h1>
+        <p>Version 1.1.0.3</p>
+    </header>
+    <div class="cta-container cta-col">
+      <div class="cta-col">
+        <h2>iOS</h2>
+        <a href="#" class="btn btn-cta">Apple Store</a>
+      </div>
+      <div class="cta-col">
+        <h2>Android</h2>
+        <a href="#" class="btn btn-cta">Play Store</a>
+      </div>
     </div>
   </section>
 
   <!-- Subscribe -->
   <section class="subscribe">
-    <h1></h1>
-    <form action="#">
-      <input type="email" name="" id="" placeholder="Your Email">
-      <button type="submit" class="btn">*GO*</button>
-    </form>
+      <h1>Subscribe to our newsletter</h1>
+      <form action="#" class="subscribe-form">
+        <input type="email" name="Email" placeholder="Your Email" class="subscribe-mail">
+        <input type="submit" value="≻" class="btn subscribe-submit">
+      </form>
   </section>
 
-  <!-- CTA - Download -->
-  <section class="cta">
-    <h1>Download Now!</h1>
-    <p>Version 1.1.0.3</p>
-    <a href="#" class="btn btn-cta">Apple Store</a>
-    <a href="#" class="btn btn-cta">Play Store</a>
-  </section>
 
   <!-- Footer -->
   <footer class="footer">
@@ -109,10 +139,10 @@
           <a href="">Credits</a>
         </li>
         <li>
-          <a href=""></a>
+          <a href="">Privacy</a>
         </li>
         <li>
-          <a href=""></a>
+          <a href="">Contact us</a>
         </li>
       </ul>
       <p>Code by Daniel Aversa | 2018 | *Creditos do ícone*</p>

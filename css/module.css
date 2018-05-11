@@ -1,9 +1,70 @@
+
+/* Buttns */
+
 .btn {
   display: inline-block;
-  background: orange;
+  background: rgba(32, 234, 189, 1);
   padding: 15px 25px;
 }
 
+.btn-secondary {
+  background: rgba(255, 172, 35, 1);
+}
+
+/* Prevent inconvenient line breaks */
 .nobreak {
   display: inline-block;
+}
+
+/* Article */
+
+.m-article {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  min-height: 300px;
+}
+
+
+.m-article p {
+  padding: 10px 25px 25px 25px;
+}
+
+.m-article-img {
+  max-height: 500px;
+  min-height: 300px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+@media only screen and (min-width: 700px) {
+  .m-article-img {
+    max-height: none;
+  }
+}
+
+.m-article a {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Sales points */
+.m-sales-container {
+  justify-content: space-around;
+}
+
+.m-sales-points {
+  max-width: 25%;
+  padding: 15px 25px;
+}
+
+@media only screen and (max-width: 700px) {
+  .m-sales-points {
+    max-width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+.m-sales-points .btn {
+  margin: 10px;
 }
