@@ -1,9 +1,10 @@
 /*
  *  Colors
- *    Primary: rgba(32, 234, 189, 1)
- *    Secondary: rgba(0, 87, 68, 1)
- *    Accent: rgba(255, 172, 35, 1)
- */
+ * color: rgba(47,180,47,1)
+ * color: rgba(117,234,117,1)
+ * color: rgba(6,72,6,1)
+ * accent rgba(255,172,35,1)
+*/
 
 
 /*
@@ -79,26 +80,43 @@ html {
 }
 
 a {
-  color: rgba(32, 234, 189, 1);
+  color: rgba(117,234,117,1);
 }
 
 a:hover {
-  color: rgba(255, 172, 35, 1);
+  color: rgba(47,180,47,1);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgba(0, 87, 68, 1);
+  color: rgba(6,72,6,1);
 }
 
-.nav-accent {
-  color: rgba(255, 172, 35, 1);
+.nav-list {
+  background: rgba(117,234,117,1);
+}
+
+.nav-list a {
+  color: black;
+}
+
+.nav-big .nav-accent {
+  color: rgba(6,72,6,1);
+}
+
+.nav-list .nav-accent {
+  font-weight: bold;
 }
 
 .hero-header h1 {
     color: white;
 }
+
+.hero-social a:hover {
+  color: rgba(117,234,117,1);
+}
+
 .feat {
-  background: rgba(0, 87, 68, 1);
+  background: rgba(6,72,6,1);
   color: white;
 }
 
@@ -108,12 +126,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
   color: black;
+  background: rgba(117,234,117,1);
 }
 
 .btn:hover {
   color: black;
   text-decoration: none;
-  background: rgba(255, 172, 35, 1);
+  background: rgba(47,180,47,1);
 }
 
 .hero-social a {
@@ -137,5 +156,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer a {
-  color: rgba(0, 87, 68, 1);
+  color: rgba(6,72,6,1);
 }

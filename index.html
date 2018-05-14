@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- REMOVE BELLOW THIS -->
-
-  <meta http-equiv="refresh" content="10000">
-
-  <!-- REMOVE ABOVE THIS -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,15 +16,21 @@
 <body>
   <!-- Hero -->
   <section class="hero">
-    <img src="img/logo-w.svg" alt="A camera, our logo." class="logo">
     <!-- Navbar -->
     <nav class="nav">
+      <ul class="nav-big">
+        <li><a href="#about">About Photoapp</a></li>
+        <li><a href="#feat">Features</a></li>
+        <li><a href="./"><img src="img/logo-w.svg" alt="A camera, our logo." class="logo"></a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#cta" class="nav-accent">Download App</a></li>
+      </ul>
       <ul class="nav-list" id="nav-list">
-        <li><a href="#">About Photoapp</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#" class="nav-accent">Download App</a></li>
-        <li><a href="#">News Subscription</a></li>
+        <li><a href="#about">About Photoapp</a></li>
+        <li><a href="#feat">Features</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#cta" class="nav-accent">Download App</a></li>
+        <li><a href="#cta">News Subscription</a></li>
       </ul>
       <div id="hamburguer">
         <p>&#8801;</p>
@@ -40,26 +41,26 @@
     <header class="hero-header">
       <h1>Your life, <span class="nobreak">a photo</span></h1>
       <p class="hero-text">Memories lasts forever in a simple photo</p>
-      <p><a href="#" class="btn">Get Started</a></p>
+      <p><a href="#cta" class="btn">Get Started</a></p>
     </header>
 
     <!-- Social Media -->
     <div class="hero-social">
       <ul>
-        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+        <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="http://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
       </ul>
     </div>
   </section>
 
   <!-- About -->
-  <main class="about flex box">
+  <main class="about flex box" id="about">
     <article class="m-article col">
       <h1>About Photoapp</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eveniet cumque suscipit ea, incidunt vitae harum aut nesciunt est tempore dolore labore quasi voluptatum voluptate, error maxime officiis vero ab consequuntur ipsum non veritatis laudantium repudiandae.</p>
-      <a href="#" class="btn">Get Started</a>
+      <a href="#cta" class="btn">Get Started</a>
     </article>
     <div class="m-article-wrapper col">
       <img src="img/phone.jpg" alt="Our app running." class="m-article-img">
@@ -67,36 +68,36 @@
   </main>
 
   <!-- Features -->
-  <section class="feat">
+  <section class="feat" id="feat">
     <h1>Features</h1>
     <div class="flex m-sales-container">
     <div class="m-sales-points col">
       <i class="far fa-images feat-icon"></i>
       <h2>Feature 1</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nobis dolore officiis, accusamus?</p>
-      <a href="#" class="btn btn-secondary">Read More</a>
+      <a href="#cta" class="btn">Read More</a>
     </div>
     <div class="m-sales-points col">
       <i class="fas fa-camera feat-icon"></i>
       <h2>Feature 2</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima pariatur, doloribus voluptates.</p>
-      <a href="#" class="btn btn-secondary">Try it</a>
+      <a href="#cta" class="btn">Try it</a>
     </div>
     <div class="m-sales-points col">
       <i class="fas fa-mobile-alt feat-icon"></i>
       <h2>Feature 3</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem placeat vero, error ea quod animi.</p>
-      <a href="#" class="btn btn-secondary">Read More</a>
+      <a href="#cta" class="btn">Read More</a>
     </div>
     </div>
   </section>
 
   <!-- Community -->
-  <main class="community flex box">
+  <main class="community flex box" id="community">
     <article class="m-article col">
       <h1>Our Community</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eveniet cumque suscipit ea, incidunt vitae harum aut nesciunt est tempore dolore labore quasi voluptatum voluptate, error maxime officiis vero ab consequuntur ipsum non veritatis laudantium repudiandae.</p>
-      <a href="#" class="btn">Read More</a>
+      <a href="#cta" class="btn">Read More</a>
     </article>
     <div class="m-article-wrapper col">
       <img src="img/kids.jpg" alt="Our happy clients." class="m-article-img">
@@ -104,7 +105,7 @@
   </main>
 
   <!-- CTA - Download -->
-  <section class="cta">
+  <section class="cta" id="cta">
     <header class="cta-col">
         <h1>Download Now!</h1>
         <p>Version 1.1.0.3</p>
@@ -122,7 +123,7 @@
   </section>
 
   <!-- Subscribe -->
-  <section class="subscribe">
+  <section class="subscribe" id="subscribe">
       <h1>Subscribe to our newsletter</h1>
       <form action="#" class="subscribe-form">
         <input type="email" name="Email" placeholder="Your Email" class="subscribe-mail">

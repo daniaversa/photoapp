@@ -36,25 +36,46 @@
   justify-content: center;
 }
 
-.logo {
-  position: absolute;
-  top: 5vmin;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 15vmin;
-  max-width: 100px;
-  height: auto;
-}
-
 /*
  *  Navigation bar
  */
 
+ .logo {
+   width: 15vmin;
+   max-width: 100px;
+   height: auto;
+ }
+
+.nav-big {
+  max-width: 1200px;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-big li {
+  text-transform: uppercase;
+}
+
+.nav-big li:not(:nth-of-type(3)) {
+  display: none;
+}
+
+.nav-big a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
 .nav-list {
   position: absolute;
   height: 100vh;
-  background: rgba(38, 22, 38, 1);
   top: 0;
   right: 0;
   bottom: 0;
@@ -138,6 +159,9 @@
   padding: 0 0.8rem 0.3rem 0;
 }
 
+
+
+
 /*
  *   Features
  */
@@ -164,43 +188,6 @@
 
 .community img {
   text-align: left;
-}
-
-/* Subscribe */
-
-.subscribe {
-  min-height: 350px;
-  background-image: url(../img/camera.jpg);
-  background-size: cover;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
-
-.subscribe h1 {
-  font-size: 1.2rem;
-  padding-bottom: 25px;
-}
-
-.subscribe .btn {
-  font-size: 2.5rem;
-  width: 50px;
-  padding: 0.5px 10px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.subscribe-form {
-  position: relative;
-  margin: 0 auto;
-  height: 50px;
-  width: 230px;
-}
-
-.subscribe-mail {
-  height: 50px;
-  width: 180px;
 }
 
 /* Download */
@@ -231,6 +218,44 @@
 
 .cta-col {
   flex: 1 1;
+}
+
+/* Subscribe */
+
+.subscribe {
+  min-height: 350px;
+  background-image: url(../img/camera.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.subscribe h1 {
+  font-size: 1.2rem;
+  padding-bottom: 25px;
+}
+
+.subscribe .btn {
+  font-size: 2.5rem;
+  width: 50px;
+  padding: 0.5px 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.subscribe-form {
+  position: relative;
+  margin: 0 auto;
+  height: 50px;
+  width: 230px;
+}
+
+.subscribe-mail {
+  height: 50px;
+  width: 180px;
 }
 
 /* Footer */
@@ -278,5 +303,37 @@
   .about img {
     max-height: 600px;
     padding-top: 35px;
+  }
+
+  .about {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .community p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .cta {
+    min-height: 500px;
+  }
+
+  .cta-container {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .subscribe {
+    min-height: 500px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .nav-big li:not(:nth-of-type(3)) {
+    display: inline-block;
+  }
+  #hamburguer {
+    display: none;
   }
 }
